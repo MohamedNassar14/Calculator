@@ -1,0 +1,139 @@
+:root 
+{
+    --main-bg-color: #f4f4f9;
+    --second-bg-color: #3a4452;
+    --text-color: #fff;
+    --bg-yellow-700: #f29e00;
+}
+.light-mode
+{
+    --main-bg-color: #3a4452;
+    --second-bg-color: #fff;
+    --text-color: #000;
+    --bg-yellow-700: #f29e00;
+}
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+html 
+{
+    font-size: 16px;
+}
+body
+{
+    background-color: var(--main-bg-color);
+    transition: background-color .5s ease-in-out;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator 
+{
+    background-color: var(--second-bg-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.2);
+    transition: background-color .5s ease-in-out;
+}
+.header .display input 
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: right;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 0 0.75rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+.buttons button
+{
+    width: 3.75rem;
+    height: 3.75rem;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease-in-out;
+}
+.buttons button:hover 
+{
+    transform: scale(1,1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.buttons button.operator 
+{
+    background-color: var(--bg-yellow-700);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition:  transform .3s ease-in-out;
+}
+.buttons button.operator:hover
+{
+    transform: scale(1,1);
+    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.3);
+}
+.theme-switch 
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #ffffff9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.theme-switch svg 
+{
+    fill: #040114fe;
+}
+.theme-switch svg:last-child
+{
+    display: none;
+}
+.light-mode .theme-switch svg:first-child 
+{
+    display: none;
+}
+.light-mode .theme-switch svg:last-child 
+{
+    display: block;
+}
+@media screen and (max-width: 500px)
+{
+    html 
+    {
+        font-size: 12px;
+    }
+    .header .display input 
+    {
+        font-size: 1.40rem;
+    }
+    .buttons button
+    {
+        font-size: 1.40rem;
+    }
+    svg 
+    {
+        width: 18px;
+        height: 18px;
+    }
+}
