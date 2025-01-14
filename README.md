@@ -13,3 +13,5 @@ Html, CSS, JavaScript
 ## Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
+## Live Preview
+https://calculator-simple-app.vercel.app
