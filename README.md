@@ -6,6 +6,7 @@ A simple calculator app built using HTML, CSS, and JavaScript. This app allows u
 - Includes a light and dark theme and you can switch between them using the moon or the sun icon
 - Basic arithmetic operations: Addition, subtraction, multiplication, and division.
 - Clear and delete buttons: Clear input or delete last character entered.
+- No keyboard support .. So it's only through buttons.
 
 ## Tech Stack
 Html, CSS, JavaScript
