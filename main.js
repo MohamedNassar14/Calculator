@@ -29,10 +29,16 @@ backspace.addEventListener('click', ()=>
 {
     display.value = display.value.toString().slice(0, -1);
 })
+//To prevent user from typing 
+display.addEventListener('keydown', (e)=>
+{
+    e.preventDefault();
+})
 //Switch the theme
 themeSwitch.addEventListener('click', ()=>
 {
     document.body.classList.toggle('light-mode');
 })
+
 
 

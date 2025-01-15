@@ -46,7 +46,7 @@ body
 }
 .header .display input 
 {
-    width: 100%;
+    width: 350px;
     border: none;
     outline: none;
     text-align: right;
@@ -54,9 +54,10 @@ body
     color: var(--text-color);
     padding: 0 0.75rem;
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    transition: all .5s ease-in-out;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    pointer-events: none;
 }
 .buttons button
 {
@@ -70,24 +71,24 @@ body
     border-radius: 0.75rem;
     margin: 0.75rem;
     cursor: pointer;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    transition: transform .3s ease-in-out;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
 }
 .buttons button:hover 
 {
     transform: scale(1,1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 .buttons button.operator 
 {
     background-color: var(--bg-yellow-700);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition:  transform .3s ease-in-out;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
 }
 .buttons button.operator:hover
 {
     transform: scale(1,1);
-    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .theme-switch 
 {
@@ -98,7 +99,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 .theme-switch svg 
@@ -125,11 +126,11 @@ body
     }
     .header .display input 
     {
-        font-size: 1.40rem;
+        width: 260px;
     }
     .buttons button
     {
-        font-size: 1.40rem;
+        font-size: 1.60rem;
     }
     svg 
     {
